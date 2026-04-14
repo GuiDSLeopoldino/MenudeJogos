@@ -1,0 +1,107 @@
+-int: varíavel para números inteiros
+
+-char: variável para armazenar um caracter apenas.
+
+-boolean: variável que determina verdadeiro ou falso
+
+-Nomes de classes devem começar com letra maiúscula e usar a convenção PascalCase (também conhecida como Upper CamelCase).
+Exemplo: MinhaClasse.
+
+-Nomes de métodos devem começar com letra minúscula e usar a convenção camelCase.
+Exemplo: meuMetodo().
+
+-Nomes de constantes devem ser totalmente em letras maiúsculas, separadas por underline.
+Exemplo: MINHA_CONSTANTE.
+
+-Nomes de variáveis devem começar com letra minúscula e usar a convenção camelCase.
+Exemplo: minhaVariavel.
+
+-Todas as linhas de código devem ter no máximo 80 caracteres de largura para facilitar a leitura.
+
+-Recomenda-se usar espaços em branco para separar operadores, palavras-chave e elementos de controle de fluxo.
+Exemplo: if (condicao) {.
+
+-Use comentários para documentar seu código, explicando o que ele faz e por que ele faz isso. Comentários devem ser claros e concisos.
+
+-String: Serve pra definir uma váriavel como texto
+
+-Para comparar strings é utilizado .equals
+ex:String senha = "12345";
+   if (senha.equals("12345")) {
+       System.out.println("Acesso autorizado!");
+   } else {
+       System.out.println("Senha incorreta.");
+   }
+
+-O casting implícito é realizado automaticamente pelo compilador quando o tipo de dado de origem é compatível com o tipo de dado de destino. Por exemplo, é possível atribuir um valor de tipo int a uma variável do tipo double, pois o tipo double é maior e suporta todos os valores que o tipo int pode armazenar:
+int x = 10;
+double y = x; // casting implícito
+
+-O casting explícito é realizado quando o tipo de dado de origem é incompatível com o tipo de dado de destino. Nesse caso, devemos utilizar o operador de casting para realizar a conversão:
+double x = 10.5;
+int y = (int) x; // casting explícito
+
+-Scanner em java é igual input
+
+- Scanner scanner = new Scanner(System.in); é o comando para fazer um input e mostrar na tela
+logo após tem q ser seguida por uma linha de código com uma váriavel compatível com a informação q vc vai armazenar.
+
+- char vogal = scanner.next().charAt(0); é o scanner para escanear uma letra apenas
+
+- Scan.next apenas para escanear strings
+
+- == em java para comparar
+
+- em java não tem "or" para condições if else, para representar essa confição usamos "||"
+
+-.equals funciona melhor para ver se uma string é igual
+
+- && indica que as duas condições tem que serem atendidas para ser um valor true
+
+- Switch case é uma sequência de casos para "buscar" uma determinada condição com a estrutura "case 1,2,3,5..."  + variavel + break para finalizar, em caso de a condição não ser achada tem que ter um caso "default" para indicar que não encontrada
+
+- loop's de repetição:For segue uma linha de "for" para indicar que é um laço de repetição "()" dizendo como que vai funcionar o loop exemplo, int(váriavel do tipo inteiro) i(nome da variável) = 0(de onde vai começar o loop); i < 3(condição de onde o loop deve encerrar); i++(implica condição de como o loop deve se comportar após o input, no caso adicionar mais após cada input até que chegue a condição de encerramento
+
+- loop's while funcionam com loop' for só que para valores booleanos ou seja para derteminar se é true ou false, exemplo: while (nota != -1) neste while enquanto a resposta do usuário for diferente de -1 o sistema continuaria seguindo, em alguns casos como neste exemplificado será nescessário colocar uma condição "if" para filtar valores que realmente vão valer como no caso o -1 que seria descartado
+
+- estrutura switch case: switch(variavel) + cases = break após cada case.
+
+- Você pode usar can.nextLine(); para armazenar uma letra apenas tbm
+
+- Scann tem que vir sempre após o print
+
+- break sempre após cada case para indicar que o caso foi encontrado
+
+- default sempre nos ultimos dos casos para indicar que nenhuma opção digitada foi válida
+
+- return; nos case default para voltar para as escolhas
+
+- função Do while serve para "encurtar" o bloco de código while se cola do primeiro e dps as condições if, elif, else e o while(condição) vem só no final, a condição vem como true geralmente para o loop continuar
+
+- função do significa fazer logo ele executa as condições + switch case enquanto a variável dentro do while no final do código for verdadeiro ou falso dependendo do que foi determinado na váriavel inicial
+
+- ordem para executar um loop do while: 1- fazer os imports necessários ex. scanner, random etc. 2- Estabelecer variáveis. 3- Começar o comando "do" 4- executar as condições if/else/elif e/ou switch case 5- while(variável) indicando que o loop vai continuar sendo executado enquanto aquela variável tiver o valor estabelecido no começo do código
+
+- criação do objeto em POO segue a msm linha de raciocínio de uma criação de variável
+
+- Atributos são característica do objeto que devem estar estabelicidos em outra classe com o nome do Objeto que vai apresentar tais características e suas individualidades, ex. clase Pessoa - String nome; / classe Main - programador.nome = "Guilherme"
+
+- O método construtor serve para estabelecer regras de fornecimento de atributos de um objeto ex. vc cria um objeto chamado personagem mágico e quer que obrigatoriamente seja fornecido o nome e qntd de vida dele tem que criar um método construtor ex. public PersonagemMagico(String nome, int nivelEnergia, String poderMagico) {
+                                                                                                                                                                                                                                                               this.nome = nome;
+                                                                                                                                                                                                                                                               this.nivelEnergia = nivelEnergia;
+                                                                                                                                                                                                                                                               this.poderMagico = poderMagico;
+
+- Para armazenar atributos de um objeto criado dentro de um loop é necessário estabelecer eles dentro do loop ex.  IO.println("Digite o nome do Personagem: ");
+                                                                                                                                      String nome = sc.next() + sc.nextLine();
+                                                                                                                                      IO.println("Digite o poder do Personagem: ");
+                                                                                                                                      String poderMagico = sc.next() + sc.nextLine();
+
+                                                                                                                                      IO.println("Digite o nivel energia: ");
+                                                                                                                                      int nivelEnergia = sc.nextInt();
+
+                                                                                                                                      personagem.nome = nome;
+                                                                                                                                      personagem.poderMagico = poderMagico;         //este bloco estabelece os atributos do objeto acabado de ser criado no caso personagem
+                                                                                                                                      personagem.nivelEnergia = nivelEnergia;
+                                                                                                                                      break;
+
+-
