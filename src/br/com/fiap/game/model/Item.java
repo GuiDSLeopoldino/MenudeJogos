@@ -1,3 +1,5 @@
+package br.com.fiap.game.model;
+
 public class Item {
     String nome;
 

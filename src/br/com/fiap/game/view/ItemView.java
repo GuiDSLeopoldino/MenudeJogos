@@ -1,3 +1,5 @@
+package br.com.fiap.game.view;
+
 import java.util.Scanner;
 
 public class ItemView {
@@ -10,20 +12,20 @@ public class ItemView {
 
         do {
             IO.println("Selecione a opção desejada: \n" +
-                    "1- Cadastrar Item:  \n"  +
-                    "2- Exibir Item: \n" +
+                    "1- Cadastrar br.com.fiap.model.Item:  \n"  +
+                    "2- Exibir br.com.fiap.model.Item: \n" +
                     "3- Sair: \n ");
             opcao = sc.nextInt();
 
             switch (opcao) {
                 case 1:
-                    IO.println("Digite o nome do Item: ");
+                    IO.println("Digite o nome do br.com.fiap.model.Item: ");
                     String nome = sc.next() + sc.nextLine();
                     IO.println("Digite a descrição do item: ");
                     String descricao = sc.next() + sc.nextLine();
                     IO.println("Digite True se o item for raro ou false para o contrário: ");
                     Boolean raro = sc.nextBoolean();
-                    IO.println("Digite o nível de poder do Item: ");
+                    IO.println("Digite o nível de poder do br.com.fiap.model.Item: ");
                     int nivelPoder = sc.nextInt();
 
                     item.nome = nome;
